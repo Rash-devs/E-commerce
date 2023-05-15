@@ -16,7 +16,7 @@ const hotProduct = [
 function hotDeal() {
     hotProduct.forEach(details => {
     hotDeals.innerHTML +=`
-    <div class="mt-[70px] mx-auto w-[250px] h-[450px] p-2 bg-white">
+    <div class="mt-3 mx-auto w-[250px] h-[450px] p-2 bg-white">
     <div><img class="border-b-4 h-[300px]" src=${details.image} alt=""</div>
     <p class="font-bold text-red-500 ml-[15px] mt-[10px]">${details.brandName}</p>
     <p><img class="w-[150px]" src=${details.rating} alt=""</p>
@@ -75,7 +75,7 @@ const products = [
 
 function displayProducts() {
     products.forEach(product => {
-    productDisplay.innerHTML += `<div  class="flex-col w-[300px] lg:flex-row lg:w-[23%] lg:h-[450px]  bg-white mt-3 lg:mt-[80px] p-2 rounded-xl border-2 border-black-500 justify-between mx-auto">
+    productDisplay.innerHTML += `<div  class="flex-col w-[300px] lg:flex-row lg:w-[23%] lg:h-[450px]  bg-white mt-3 p-2 rounded-xl border-2 border-black-500 justify-between mx-auto">
     <div><img class="border-b-4" src=${product.image} alt="">
     </div>
     <p class="text-red-500 font-bold">${product.brandName}</p>
