@@ -1,4 +1,4 @@
-const hamburger = document.querySelector(".hamburger")
+const hamburger = document.querySelector(".fa-bars")
 const nav = document.querySelector("#nav-menu")
 
 hamburger.onclick = () => {
