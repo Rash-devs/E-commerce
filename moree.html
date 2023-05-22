@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <script src="https://kit.fontawesome.com/f8dda1aebc.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="  bg-blue-900  pt-0.5 lg:px-20 md:px-3 ">
+        <div class=" flex flex-col justify-between items-center py-4  border-b-2 md:flex-row ">
+            <div class="logo ">
+                <h2 class="text-white text-2xl font-bold">SHOPPING<span class="text-[orange]">BAG</span></h2>
+            </div>
+
+            <div class="flex sm: mt-2 mb-2  ">
+                <input type="text" placeholder="search here" id="input"
+                    class="lg:w-[31rem] h-[2.3rem]  rounded-l-full  pl-6 sm: flex flex-col w-[14rem]  items-center content-center ">
+                <i
+                    class="fa-solid fa-magnifying-glass search border flex items-center justify-center w-8 h-[2.3rem] bg-white rounded-r-full   "></i>
+            </div>
+
+            <div class="text-white">
+                <i class="fa-regular fa-heart love"></i>
+                <i class="fa-solid fa-cart-shopping cart ml-[15px]"></i>
+            </div>
+        </div>
+        <ul id="nav-menu" >
+            <li><a href="../index.html">Home</a></li>
+            <li>Clothing</li>
+            <li>Electronics</li>
+            <li>Watches</li>
+            <li>Shoes</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+
+        <div class="hamburger">
+
+        <i class="fa-solid fa-bars text-white text-2xl cursor-pointer"></i>       
+         </div>
+
+    </header>
+
+<section>
+    <div id="my-container" class="flex flex-col lg:flex-row lg:space-x-[20px] lg:mx-[10px] lg:mt-[20px] justify-between ">
+        
+        <div id="product-container" class="flex flex-col w-[100%] mt-2 lg:mt-0 lg:w-[80%] lg:h-[100%] bg-white rounded-xl">
+        <div class="flex flex-row  border-b-4  justify-between w-[95vw] mx-auto py-[10px]">
+            <div class="mt-[5px] font-bold">NEW OFFER</div>
+            <div class="mt-[5px] font-bold  text-[#fb5607] hidden" id="more">MORE</div>
+        </div>
+    <div id="display-product" class="flex justify-between flex-row flex-wrap w-[95vw] h-[100%]"></div>
+
+    </div>
+        </div>
+      </div>
+</section>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/more.js"></script>
+</body>
+</html>

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/newoffer.css">
     <script src="https://kit.fontawesome.com/f8dda1aebc.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
@@ -31,7 +32,7 @@
                 <i class="fa-solid fa-cart-shopping cart ml-[15px]"></i>
             </div>
         </div>
-        <ul id="nav-menu" >
+        <ul id="nav-menu">
             <li><a href="./index.html">Home</a></li>
             <li>Clothing</li>
             <li>Electronics</li>
@@ -43,38 +44,77 @@
 
         <div class="hamburger">
 
-        <i class="fa-solid fa-bars text-white text-2xl cursor-pointer"></i>       
-         </div>
+            <i class="fa-solid fa-bars text-white text-2xl cursor-pointer"></i>
+        </div>
 
     </header>
 
-<section>
-    <div id="my-container" class="flex flex-col lg:flex-row lg:space-x-[20px] lg:mx-[10px] lg:mt-[20px] justify-between ">
-        
+    <section>
+        <div id="my-container"
+            class="flex flex-col lg:flex-row lg:space-x-[20px] lg:mx-[10px] lg:mt-[20px] justify-between ">
+
             <!-- first div -->
-        <div id="cont-one" class="flex flex-col h-[650px] lg:h-[530px] w-[100vw] lg:w-[20%] bg-white rounded-xl ">
-        <div class="flex flex-row justify-between w-[90%] mx-auto py-[10px] border-b-4 border-white-500 bg-white lg:flex-row ">
-            <div class="mt-[5px] text-black-600 font-bold">HOT DEALS</div>
-            <div class="mt-[5px] font-bold  text-[#fb5607]">MORE</div>
+            <div id="cont-one" class="flex flex-col h-[650px] lg:h-[530px] w-[100vw] lg:w-[20%] bg-white rounded-xl ">
+                <div
+                    class="flex flex-row justify-between w-[90%] mx-auto py-[10px] border-b-4 border-white-500 bg-white lg:flex-row ">
+                    <div class="mt-[5px] text-black-600 font-bold">HOT DEALS</div>
+                    <div class="mt-[5px] font-bold  text-[#fb5607]">MORE</div>
+                </div>
+                <div id="hot-deals"></div>
+            </div>
+
+            <!-- second div-->
+            <div id="cont-two" class="flex flex-col w-[100%] mt-2 lg:mt-0 lg:w-[80%] lg:h-[530px] bg-white rounded-xl">
+                <div class="flex flex-row  border-b-4  justify-between w-[95%] mx-auto py-[10px]">
+                    <div class="mt-[5px] font-bold">NEW PRODUCTS DEALS</div>
+                    <div class="mt-[5px] font-bold  text-[#fb5607] cursor-pointer hover:text-green-600 hover:text-xl"
+                        id="more"><a href="./pages/more.html">MORE</a></div>
+                </div>
+                <div id="display-product" class="flex justify-between flex-row flex-wrap mx-[10px] h-[100%]"></div>
+
+            </div>
         </div>
-            <div id="hot-deals"></div>
         </div>
 
-         <!-- second div-->
-        <div id="cont-two" class="flex flex-col w-[100%] mt-2 lg:mt-0 lg:w-[80%] lg:h-[530px] bg-white rounded-xl">
-        <div class="flex flex-row  border-b-4  justify-between w-[95%] mx-auto py-[10px]">
-            <div class="mt-[5px] font-bold">NEW PRODUCTS DEALS</div>
-            <div class="mt-[5px] font-bold  text-[#fb5607] cursor-pointer hover:text-green-600 hover:text-xl" id="more"><a href="./pages/more.html">MORE</a></div>
-        </div>
-    <div id="display-product" class="flex justify-between flex-row flex-wrap mx-[10px] h-[100%]"></div>
+    </section>
 
-    </div>
+    <section>
+        <div class=" flex flex-col mt-6 justify-between md:flex-row md:justify-center">
+
+            <div id="products"
+                class="flex flex-col float-left w-[19%] ml-[10px] mr-3 justify-center items-center gap-3 bg-white  rounded-xl ">
+
+
+                <h1 class=" float-left py-3  w-[90%]  font-bold border-b-4 ">
+                    NEW OFFER <button class="text-[#fb5607]  float-right" id="Moree"><a
+                            href="./moree.html">More</a></button></h1>
+
+
+
+            </div>
+
+            <div class="object-cover w-[80%] mx[5px] ml[10px]  float-right flex flex-col ml-[8px] pr-3">
+                <div class=" w-[100%] h-[250px] rounded-xl mb-[10px] img"
+                    style="background-image:  url('https://media.istockphoto.com/id/1474840777/photo/close-up-of-woman-hand-choosing-shirt-in-store.jpg?s=612x612&w=0&k=20&c=VkOTmUdxiz68Oh9xXZBq8Gd_3LO-uSTPnpTzPlKtH5g=');">
+                    <div class="flex flex-col justify-center items-center pt-14 ">
+                        <h1 class="text-white mb-5 font-bold text-2xl tracking-widest">NEW COLLECTION</h1>
+                        <p class="text-white mb-5">shop Mum's & Women's</p>
+                        <button class="bg-yellow-400 px-4 py-2 font-bold">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="object-cover bg-white w-[100%] py-6  rounded-xl flex items-center justify-center" id="sections">
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
-</section>
+    </section>
 
     <script src="./js/header.js"></script>
     <script src="./js/section-one.js"></script>
+    <script src="./js/newoffer.js"></script>
 </body>
 
 </html>
